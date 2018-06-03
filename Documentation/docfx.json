@@ -1,0 +1,44 @@
+﻿{
+  "metadata": [
+    {
+      "src": [
+        {
+          "files": [
+            "MSBuildSDKExtrasDocFXRepro/MSBuildSDKExtrasDocFXRepro.csproj"
+          ],
+          "exclude": [ "**/bin/**", "**/obj/**" ],
+          "src": ".."
+        }
+      ],
+      "dest": "api",
+      "disableGitFeatures":  true
+    }
+  ],
+  "build": {
+    "disableGitFeatures": true,
+    "content": [
+      {
+        "files": [
+          "api/*.yml",
+        ]
+      }
+    ],
+    "resource": [
+      {
+        "files": [ 
+          "**/images/**",
+          "files/**"
+         ]
+      }
+    ],
+    "template": [
+      "default",
+      "template"
+    ], 
+    "dest": "../Documentation/wwwroot",
+    "globalMetadata": {
+      "_appTitle": "ATS Core",
+      "_appFooter": "Copyright © 2018 Curtis Instruments"
+    }
+  }
+}
